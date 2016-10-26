@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+
+<JboProject
+   xmlns="http://xmlns.oracle.com/bc4j"
+   Name="ApplicationModel"
+   Version="11.1.1.64.93"
+   SeparateXMLFiles="true"
+   PackageName="com.lbspak.model">
+   <DesignTime>
+      <Attr Name="_jprName" Value="../../../../ApplicationModel.jpr"/>
+      <Attr Name="_appModuleNames0"
+         Value="com.lbspak.model.appmodules.LBSAppModule"/>
+      <Attr Name="_NamedConnection" Value="LbsDBConnection"/>
+   </DesignTime>
+   <Containee
+      Name="appmodules"
+      PackageName="com.lbspak.model.appmodules"
+      ObjectType="JboPackage">
+      <DesignTime>
+         <Attr Name="_AM" Value="true"/>
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="electronic"
+      PackageName="com.lbspak.model.electronic"
+      ObjectType="JboPackage">
+      <DesignTime>
+         <Attr Name="_EO" Value="true"/>
+         <Attr Name="_VO" Value="true"/>
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="fnd"
+      PackageName="com.lbspak.model.fnd"
+      ObjectType="JboPackage">
+      <DesignTime>
+         <Attr Name="_VO" Value="true"/>
+      </DesignTime>
+   </Containee>
+</JboProject>

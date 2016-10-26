@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelGroupLayout id="pgl1">
+    <af:activeOutputText value="success" id="aot1"/>
+  </af:panelGroupLayout>
+  <af:commandButton text="logout" id="cb1" action="#{UserBean.logout}"/>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:UserBean-->
+</jsp:root>

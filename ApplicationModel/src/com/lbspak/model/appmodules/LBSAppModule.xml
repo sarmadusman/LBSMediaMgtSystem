@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="LBSAppModule"
+  Version="11.1.1.64.93"
+  InheritPersonalization="true"
+  ClearCacheOnRollback="true"
+  ComponentClass="com.lbspak.model.appmodules.LBSAppModuleImpl">
+  <DesignTime>
+    <Attr Name="_deployType" Value="0"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="VOFndUsers1"
+    ViewObjectName="com.lbspak.model.fnd.VOFndUsers"/>
+  <ViewUsage
+    Name="VOMediaPlan1"
+    ViewObjectName="com.lbspak.model.electronic.VOMediaPlan"/>
+</AppModule>

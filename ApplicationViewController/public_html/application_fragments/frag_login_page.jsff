@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGroupLayout id="pgl1" layout="vertical" inlineStyle="width:100%">
+    <af:panelStretchLayout id="psl1" startWidth="33%" endWidth="33%"
+                           topHeight="33%" bottomHeight="33%">
+      <f:facet name="center">
+        <af:panelGroupLayout id="pg" layout="vertical" halign="center">
+          <af:panelHeader text=" " id="ph1" inlineStyle="width:100%;">
+            <f:facet name="context"/>
+            <f:facet name="menuBar"/>
+            <f:facet name="toolbar"/>
+            <f:facet name="legend"/>
+            <f:facet name="info"/>
+            <af:panelFormLayout id="pfl1">
+              <f:facet name="footer"/>
+              <af:inputText label="Username" id="it_username"
+                            binding="#{UserBean._username}"
+                            value="#{pageFlowScope.username}"
+                            contentStyle="font-weight:bold;"/>
+              <af:inputText label="Password" id="it_password"
+                            binding="#{UserBean._password}"
+                            value="#{pageFlowScope.password}" secret="true"
+                            contentStyle="font-weight:bold; color:red;"/>
+              <af:commandButton text="Login" id="cb1" action="do_login"/>
+            </af:panelFormLayout>
+          </af:panelHeader>
+        </af:panelGroupLayout>
+      </f:facet>
+      <f:facet name="bottom">
+        <af:panelGroupLayout id="pgl2"/>
+      </f:facet>
+      <f:facet name="top">
+        <af:panelGroupLayout id="pgl3"/>
+      </f:facet>
+    </af:panelStretchLayout>
+  </af:panelGroupLayout>
+</jsp:root>

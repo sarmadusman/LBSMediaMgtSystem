@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93"
+                id="tf_user_login_tf_user_login_ExecuteWithParamsPageDef"
+                Package="com.lbspak.view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables>
+    <iterator Binds="VOFndUsers1" RangeSize="25"
+              DataControl="LBSAppModuleDataControl" id="VOFndUsers1Iterator"
+              Refresh="never"/>
+  </executables>
+  <bindings>
+    <action IterBinding="VOFndUsers1Iterator" id="ExecuteWithParams"
+            RequiresUpdateModel="true" Action="executeWithParams">
+      <NamedData NDName="username" NDValue="#{pageFlowScope.username}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="password" NDValue="#{pageFlowScope.password}"
+                 NDType="java.lang.String"/>
+    </action>
+  </bindings>
+</pageDefinition>

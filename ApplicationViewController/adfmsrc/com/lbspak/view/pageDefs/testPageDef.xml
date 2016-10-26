@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="testPageDef"
+                Package="com.lbspak.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="VOFndUsers1" RangeSize="25"
+              DataControl="LBSAppModuleDataControl" id="VOFndUsers1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="VOFndUsers1Iterator" id="VOFndUsers1">
+      <nodeDefinition DefName="com.lbspak.model.fnd.VOFndUsers"
+                      Name="VOFndUsers10">
+        <AttrNames>
+          <Item Value="UserName"/>
+          <Item Value="Password"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

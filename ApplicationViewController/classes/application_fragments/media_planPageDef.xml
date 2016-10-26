@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="media_planPageDef"
+                Package="application_fragments">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="VOMediaPlan1" RangeSize="25"
+              DataControl="LBSAppModuleDataControl" id="VOMediaPlan1Iterator"/>
+    <searchRegion Binds="VOMediaPlan1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  id="VOMediaPlan1Query"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="VOMediaPlan1Iterator" id="VOMediaPlan1">
+      <nodeDefinition DefName="com.lbspak.model.electronic.VOMediaPlan"
+                      Name="VOMediaPlan10">
+        <AttrNames>
+          <Item Value="Companycode"/>
+          <Item Value="Seqno"/>
+          <Item Value="Plandate"/>
+          <Item Value="Clientcode"/>
+          <Item Value="Brandcode"/>
+          <Item Value="SpInst"/>
+          <Item Value="Approved"/>
+          <Item Value="Closed"/>
+          <Item Value="Periodfrom"/>
+          <Item Value="Periodto"/>
+          <Item Value="Filmcode"/>
+          <Item Value="Duration"/>
+          <Item Value="Gstonfoc"/>
+          <Item Value="Channelcode"/>
+          <Item Value="Progcode"/>
+          <Item Value="Dealdiscper"/>
+          <Item Value="Dealdiscamt"/>
+          <Item Value="Agencomm"/>
+          <Item Value="Agenamt"/>
+          <Item Value="Slabrate"/>
+          <Item Value="Grossamount"/>
+          <Item Value="Stper"/>
+          <Item Value="Stamount"/>
+          <Item Value="Netamount"/>
+          <Item Value="Entrysequence"/>
+          <Item Value="Ratetype"/>
+          <Item Value="Day1"/>
+          <Item Value="Day2"/>
+          <Item Value="Day3"/>
+          <Item Value="Day4"/>
+          <Item Value="Day5"/>
+          <Item Value="Day6"/>
+          <Item Value="Day7"/>
+          <Item Value="Day8"/>
+          <Item Value="Day9"/>
+          <Item Value="Day10"/>
+          <Item Value="Day11"/>
+          <Item Value="Day12"/>
+          <Item Value="Day13"/>
+          <Item Value="Day14"/>
+          <Item Value="Day15"/>
+          <Item Value="Day16"/>
+          <Item Value="Day17"/>
+          <Item Value="Day"/>
+          <Item Value="Day19"/>
+          <Item Value="Day20"/>
+          <Item Value="Day21"/>
+          <Item Value="Day22"/>
+          <Item Value="Day23"/>
+          <Item Value="Day24"/>
+          <Item Value="Day25"/>
+          <Item Value="Day26"/>
+          <Item Value="Day27"/>
+          <Item Value="Day28"/>
+          <Item Value="Day29"/>
+          <Item Value="Day30"/>
+          <Item Value="Day31"/>
+          <Item Value="Day32"/>
+          <Item Value="Day33"/>
+          <Item Value="Day34"/>
+          <Item Value="Day35"/>
+          <Item Value="Day36"/>
+          <Item Value="Day37"/>
+          <Item Value="Day38"/>
+          <Item Value="Day39"/>
+          <Item Value="Day40"/>
+          <Item Value="Day41"/>
+          <Item Value="Day42"/>
+          <Item Value="Day43"/>
+          <Item Value="Day44"/>
+          <Item Value="Day45"/>
+          <Item Value="Day46"/>
+          <Item Value="Day47"/>
+          <Item Value="Day48"/>
+          <Item Value="Day49"/>
+          <Item Value="Day50"/>
+          <Item Value="Day51"/>
+          <Item Value="Day52"/>
+          <Item Value="Day53"/>
+          <Item Value="Day54"/>
+          <Item Value="Day55"/>
+          <Item Value="Day56"/>
+          <Item Value="Day57"/>
+          <Item Value="Day58"/>
+          <Item Value="Day59"/>
+          <Item Value="Day60"/>
+          <Item Value="Totfreq"/>
+          <Item Value="Unitcost"/>
+          <Item Value="Totalcost"/>
+          <Item Value="Cps"/>
+          <Item Value="Userid"/>
+          <Item Value="Computerid"/>
+          <Item Value="Lastedited"/>
+          <Item Value="Progcodenew"/>
+          <Item Value="Positioncode"/>
+          <Item Value="Totalmin"/>
+          <Item Value="Rating"/>
+          <Item Value="Grps"/>
+          <Item Value="Cprp"/>
+          <Item Value="Netcostperspot"/>
+          <Item Value="Totalnetcost"/>
+          <Item Value="DrcCode"/>
+          <Item Value="Xlfilepathname"/>
+          <Item Value="Premamt"/>
+          <Item Value="Ratebeforeprem"/>
+          <Item Value="Pidno"/>
+          <Item Value="Tardiscper"/>
+          <Item Value="Tardiscamt"/>
+          <Item Value="Cnamt"/>
+          <Item Value="Cntypecode"/>
+          <Item Value="MannualRono"/>
+          <Item Value="Tariffrate"/>
+          <Item Value="ChanPremper"/>
+          <Item Value="RatebeforepremCli"/>
+          <Item Value="PremperCli"/>
+          <Item Value="PremamtCli"/>
+          <Item Value="SlabrateCli"/>
+          <Item Value="GrossamountCli"/>
+          <Item Value="TotalcostCli"/>
+          <Item Value="StperCli"/>
+          <Item Value="StamountCli"/>
+          <Item Value="Actualrate"/>
+          <Item Value="ActualcostSpot"/>
+          <Item Value="ActualcnAmt"/>
+          <Item Value="RowID"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

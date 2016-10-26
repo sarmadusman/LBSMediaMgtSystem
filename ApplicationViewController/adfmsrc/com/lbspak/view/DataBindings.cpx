@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.lbspak.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+    <factory nameSpace="http://xmlns.oracle.com/adfm/dvt"
+             className="oracle.adfinternal.view.faces.dvt.model.binding.FacesBindingFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/untitled1.jspx" usageId="com_lbspak_view_untitled1PageDef"/>
+    <page path="/media_management_solution.jsp"
+          usageId="com_lbspak_view_media_management_solutionPageDef"/>
+    <page path="/WEB-INF/tf-user-login.xml#tf-user-login@ExecuteWithParams"
+          usageId="com_lbspak_view_tf_user_login_tf_user_login_ExecuteWithParamsPageDef"/>
+    <page path="/test.jsff" usageId="com_lbspak_view_testPageDef"/>
+    <page path="/application_fragments/frag_login_page.jsff"
+          usageId="com_lbspak_view_frag_login_pagePageDef"/>
+    <page path="/untitled1.jsp" usageId="com_lbspak_view_untitled1PageDef1"/>
+    <page path="/WEB-INF/tf-media_plan.xml#tf-media_plan@Execute"
+          usageId="com_lbspak_view_tf_media_plan_tf_media_plan_ExecutePageDef"/>
+    <page path="/application_fragments/media_plan.jsff"
+          usageId="com_lbspak_view_media_planPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_lbspak_view_untitled1PageDef"
+          path="com.lbspak.view.pageDefs.untitled1PageDef"/>
+    <page id="com_lbspak_view_media_management_solutionPageDef"
+          path="com.lbspak.view.pageDefs.media_management_solutionPageDef"/>
+    <page id="com_lbspak_view_tf_user_login_tf_user_login_ExecuteWithParamsPageDef"
+          path="com.lbspak.view.pageDefs.tf_user_login_tf_user_login_ExecuteWithParamsPageDef"/>
+    <page id="com_lbspak_view_testPageDef"
+          path="com.lbspak.view.pageDefs.testPageDef"/>
+    <page id="com_lbspak_view_frag_login_pagePageDef"
+          path="application_fragments.frag_login_pagePageDef"/>
+    <page id="com_lbspak_view_untitled1PageDef1"
+          path="com.lbspak.view.pageDefs.untitled1PageDef1"/>
+    <page id="com_lbspak_view_tf_media_plan_tf_media_plan_ExecutePageDef"
+          path="com.lbspak.view.pageDefs.tf_media_plan_tf_media_plan_ExecutePageDef"/>
+    <page id="com_lbspak_view_media_planPageDef"
+          path="application_fragments.media_planPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="LBSAppModuleDataControl"
+                     Package="com.lbspak.model.appmodules"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="LBSAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

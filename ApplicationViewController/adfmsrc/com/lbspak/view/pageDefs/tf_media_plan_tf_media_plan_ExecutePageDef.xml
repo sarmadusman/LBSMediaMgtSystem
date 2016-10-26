@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93"
+                id="tf_media_plan_tf_media_plan_ExecutePageDef"
+                Package="com.lbspak.view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables>
+    <iterator Binds="VOMediaPlan1" RangeSize="25"
+              DataControl="LBSAppModuleDataControl" id="VOMediaPlan1Iterator"
+              Refresh="never"/>
+  </executables>
+  <bindings>
+    <action IterBinding="VOMediaPlan1Iterator" id="Execute"
+            RequiresUpdateModel="true" Action="iteratorExecute"/>
+  </bindings>
+</pageDefinition>

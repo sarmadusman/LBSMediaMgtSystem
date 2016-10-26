@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="tf-user-login">
+    <default-activity id="__1">router</default-activity>
+    <router id="router">
+      <case>
+        <expression>#{UserBean.hasLogin==true}</expression>
+        <outcome id="__2">GOOD</outcome>
+      </case>
+      <case>
+        <expression>#{UserBean.hasLogin==false}</expression>
+        <outcome id="__11">BAD</outcome>
+      </case>
+      <default-outcome>IN</default-outcome>
+    </router>
+    <view id="frag_login_page">
+      <page>/application_fragments/frag_login_page.jsff</page>
+    </view>
+    <method-call id="ExecuteWithParams">
+      <method>#{bindings.ExecuteWithParams.execute}</method>
+      <outcome id="__8">
+        <fixed-outcome>ExecuteWithParams</fixed-outcome>
+      </outcome>
+    </method-call>
+    <method-call id="doLogin">
+      <method>#{UserBean.doLogin}</method>
+      <outcome id="__26">
+        <fixed-outcome>fail</fixed-outcome>
+      </outcome>
+    </method-call>
+    <task-flow-call id="tf-media_plan">
+      <task-flow-reference>
+        <document>/WEB-INF/tf-media_plan.xml</document>
+        <id>tf-media_plan</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <control-flow-rule id="__3">
+      <from-activity-id id="__4">router</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome id="__6">BAD</from-outcome>
+        <to-activity-id id="__7">frag_login_page</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__14">
+        <from-outcome id="__12">GOOD</from-outcome>
+        <to-activity-id id="__13">tf-media_plan</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__9">
+      <from-activity-id id="__10">frag_login_page</from-activity-id>
+      <control-flow-case id="__16">
+        <to-activity-id id="__15">ExecuteWithParams</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__27">
+      <from-activity-id id="__28">ExecuteWithParams</from-activity-id>
+      <control-flow-case id="__30">
+        <from-outcome id="__29">ExecuteWithParams</from-outcome>
+        <to-activity-id id="__31">doLogin</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__32">
+      <from-activity-id id="__33">doLogin</from-activity-id>
+      <control-flow-case id="__34">
+        <to-activity-id id="__35">router</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
