@@ -10,4 +10,9 @@
     <managed-bean-class id="__8">com.lbspak.view.ManagedBeans.User</managed-bean-class>
     <managed-bean-scope id="__5">session</managed-bean-scope>
   </managed-bean>
+  <managed-bean id="__12">
+    <managed-bean-name id="__10">electronicMediaBean</managed-bean-name>
+    <managed-bean-class id="__9">com.lbspak.view.ManagedBeans.ElectronicMediaActions</managed-bean-class>
+    <managed-bean-scope id="__11">backingBean</managed-bean-scope>
+  </managed-bean>
 </adfc-config>

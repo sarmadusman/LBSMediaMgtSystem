@@ -3,6 +3,21 @@
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
           xmlns:f="http://java.sun.com/jsf/core">
   <af:panelGroupLayout id="pgl1" layout="vertical" halign="center">
+    <af:panelHeader text="Search" id="ph1">
+      <f:facet name="context"/>
+      <f:facet name="menuBar"/>
+      <f:facet name="toolbar"/>
+      <f:facet name="legend"/>
+      <f:facet name="info"/>
+      <af:panelGroupLayout id="pgl2" layout="horizontal">
+        <af:inputDate label="From" id="id9"
+                      binding="#{backingBeanScope.electronicMediaBean.dateFrom}"/>
+        <af:inputDate label="To" id="id10"
+                      binding="#{backingBeanScope.electronicMediaBean.dateTo}"/>
+        <af:commandButton text="Show Days" id="cb1"
+                          action="#{backingBeanScope.electronicMediaBean.showDays}"/>
+      </af:panelGroupLayout>
+    </af:panelHeader>
     <af:table value="#{bindings.VOMediaPlan1.collectionModel}" var="row"
               rows="#{bindings.VOMediaPlan1.rangeSize}"
               emptyText="#{bindings.VOMediaPlan1.viewable ? 'No data to display.' : 'Access Denied.'}"
@@ -12,7 +27,7 @@
               queryListener="#{bindings.VOMediaPlan1Query.processQuery}"
               filterVisible="true" varStatus="vs"
               selectionListener="#{bindings.VOMediaPlan1.collectionModel.makeCurrent}"
-              rowSelection="multiple" id="t1">
+              rowSelection="multiple" id="t1" width="100%">
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Companycode.name}"
                  filterable="true" sortable="true"
                  headerText="#{bindings.VOMediaPlan1.hints.Companycode.label}"
@@ -414,7 +429,8 @@
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day1.name}"
                  filterable="true" sortable="true"
                  headerText="#{bindings.VOMediaPlan1.hints.Day1.label}"
-                 id="c124">
+                 id="c124"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 28'] == true }">
         <af:inputText value="#{row.bindings.Day1.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day1.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day1.mandatory}"
@@ -429,7 +445,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day2.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day2.label}" id="c5">
+                 headerText="#{bindings.VOMediaPlan1.hints.Day2.label}" id="c5"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 29'] == true }">
         <af:inputText value="#{row.bindings.Day2.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day2.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day2.mandatory}"
@@ -445,7 +462,8 @@
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day3.name}"
                  filterable="true" sortable="true"
                  headerText="#{bindings.VOMediaPlan1.hints.Day3.label}"
-                 id="c103">
+                 id="c103"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 30'] == true }">
         <af:inputText value="#{row.bindings.Day3.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day3.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day3.mandatory}"
@@ -461,7 +479,8 @@
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day4.name}"
                  filterable="true" sortable="true"
                  headerText="#{bindings.VOMediaPlan1.hints.Day4.label}"
-                 id="c116">
+                 id="c116"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 31'] == true }">
         <af:inputText value="#{row.bindings.Day4.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day4.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day4.mandatory}"
@@ -1974,4 +1993,5 @@
       </af:column>
     </af:table>
   </af:panelGroupLayout>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:electronicMediaBean-->
 </jsp:root>
