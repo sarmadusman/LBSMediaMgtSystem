@@ -3,10 +3,11 @@
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
           xmlns:f="http://java.sun.com/jsf/core">
   <af:panelGroupLayout id="pgl1" layout="vertical" inlineStyle="width:100%">
-    <af:panelStretchLayout id="psl1" startWidth="33%" endWidth="33%"
-                           topHeight="33%" bottomHeight="33%">
+    <af:panelStretchLayout id="psl1" startWidth="20%" endWidth="20%"
+                           topHeight="20%" bottomHeight="10%">
       <f:facet name="center">
-        <af:panelGroupLayout id="pg" layout="vertical" halign="center">
+        <af:panelGroupLayout id="pg" layout="vertical" halign="center"
+                             inlineStyle="background-color:#f2f2f2;border:1px #DEDEDE solid;padding:5px">
           <af:panelHeader text=" " id="ph1" inlineStyle="width:100%;">
             <f:facet name="context"/>
             <f:facet name="menuBar"/>
@@ -15,15 +16,24 @@
             <f:facet name="info"/>
             <af:panelFormLayout id="pfl1">
               <f:facet name="footer"/>
-              <af:inputText label="Username" id="it_username"
+              <af:outputText value="Username:" id="ot1"
+                             inlineStyle="color:blue; font-size:17.0px;"/>
+              <af:inputText id="it_username"
                             binding="#{UserBean._username}"
                             value="#{pageFlowScope.username}"
-                            contentStyle="font-weight:bold;"/>
-              <af:inputText label="Password" id="it_password"
+                            contentStyle="font-weight:bold;padding:8px"
+                            label=" " columns="60"/>
+              <af:spacer width="10" height="10" id="s1"/>
+              <af:outputText value="Password:" id="outputText1"
+                             inlineStyle="color:blue; font-size:17.0px;"/>
+              <af:inputText id="it_password"
                             binding="#{UserBean._password}"
                             value="#{pageFlowScope.password}" secret="true"
-                            contentStyle="font-weight:bold; color:red;"/>
-              <af:commandButton text="Login" id="cb1" action="do_login"/>
+                            contentStyle="font-weight:bold;padding:8px"
+                            label=" " columns="60"/>
+              <af:spacer width="10" height="10" id="spacer1"/>
+              <af:commandButton text="Login" id="cb1" action="do_login"
+                                inlineStyle="color:black; font-weight:bold;"/>
             </af:panelFormLayout>
           </af:panelHeader>
         </af:panelGroupLayout>

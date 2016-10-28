@@ -428,9 +428,9 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day1.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day1.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 1']}"
                  id="c124"
-                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 28'] == true }">
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 1'] == true }">
         <af:inputText value="#{row.bindings.Day1.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day1.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day1.mandatory}"
@@ -445,8 +445,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day2.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day2.label}" id="c5"
-                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 29'] == true }">
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 2']}" id="c5"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 2'] == true }">
         <af:inputText value="#{row.bindings.Day2.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day2.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day2.mandatory}"
@@ -461,9 +461,9 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day3.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day3.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 3']}"
                  id="c103"
-                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 30'] == true }">
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 3'] == true }">
         <af:inputText value="#{row.bindings.Day3.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day3.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day3.mandatory}"
@@ -478,9 +478,10 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day4.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day4.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 4']}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 4'] == true }"
                  id="c116"
-                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 31'] == true }">
+                 >
         <af:inputText value="#{row.bindings.Day4.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day4.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day4.mandatory}"
@@ -495,7 +496,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day5.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day5.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 5']}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 5'] == true }"
                  id="c64">
         <af:inputText value="#{row.bindings.Day5.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day5.label}"
@@ -511,7 +513,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day6.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day6.label}" id="c8">
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 6'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 6']}" id="c8">
         <af:inputText value="#{row.bindings.Day6.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day6.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day6.mandatory}"
@@ -526,7 +529,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day7.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day7.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 7'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 7']}"
                  id="c43">
         <af:inputText value="#{row.bindings.Day7.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day7.label}"
@@ -542,7 +546,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day8.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day8.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 8'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 8']}"
                  id="c19">
         <af:inputText value="#{row.bindings.Day8.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day8.label}"
@@ -558,7 +563,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day9.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day9.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 9'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 9']}"
                  id="c79">
         <af:inputText value="#{row.bindings.Day9.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day9.label}"
@@ -574,7 +580,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day10.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day10.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 10'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 10']}"
                  id="c88">
         <af:inputText value="#{row.bindings.Day10.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day10.label}"
@@ -590,7 +597,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day11.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day11.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 11'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 11']}"
                  id="c71">
         <af:inputText value="#{row.bindings.Day11.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day11.label}"
@@ -606,7 +614,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day12.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day12.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 12'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 12']}"
                  id="c25">
         <af:inputText value="#{row.bindings.Day12.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day12.label}"
@@ -622,7 +631,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day13.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day13.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 13'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 13']}"
                  id="c12">
         <af:inputText value="#{row.bindings.Day13.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day13.label}"
@@ -638,7 +648,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day14.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day14.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 14'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 14']}"
                  id="c7">
         <af:inputText value="#{row.bindings.Day14.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day14.label}"
@@ -654,7 +665,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day15.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day15.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 15'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 15']}"
                  id="c104">
         <af:inputText value="#{row.bindings.Day15.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day15.label}"
@@ -670,7 +682,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day16.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day16.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 16'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 16']}"
                  id="c42">
         <af:inputText value="#{row.bindings.Day16.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day16.label}"
@@ -686,7 +699,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day17.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day17.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 17'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 17']}"
                  id="c32">
         <af:inputText value="#{row.bindings.Day17.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day17.label}"
@@ -702,7 +716,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day.label}" id="c70">
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 18'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 18']}" id="c70">
         <af:inputText value="#{row.bindings.Day.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day.label}"
                       required="#{bindings.VOMediaPlan1.hints.Day.mandatory}"
@@ -717,7 +732,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day19.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day19.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 19'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 19']}"
                  id="c93">
         <af:inputText value="#{row.bindings.Day19.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day19.label}"
@@ -733,7 +749,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day20.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day20.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 20'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 20']}"
                  id="c72">
         <af:inputText value="#{row.bindings.Day20.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day20.label}"
@@ -749,7 +766,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day21.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day21.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 21'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 21']}"
                  id="c102">
         <af:inputText value="#{row.bindings.Day21.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day21.label}"
@@ -765,7 +783,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day22.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day22.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 22'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 22']}"
                  id="c117">
         <af:inputText value="#{row.bindings.Day22.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day22.label}"
@@ -781,7 +800,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day23.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day23.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 23'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 23']}"
                  id="c91">
         <af:inputText value="#{row.bindings.Day23.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day23.label}"
@@ -797,7 +817,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day24.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day24.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 24'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 24']}"
                  id="c11">
         <af:inputText value="#{row.bindings.Day24.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day24.label}"
@@ -813,7 +834,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day25.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day25.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 25'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 25']}"
                  id="c1">
         <af:inputText value="#{row.bindings.Day25.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day25.label}"
@@ -829,7 +851,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day26.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day26.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 26'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 26']}"
                  id="c107">
         <af:inputText value="#{row.bindings.Day26.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day26.label}"
@@ -845,7 +868,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day27.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day27.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 27'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 27']}"
                  id="c39">
         <af:inputText value="#{row.bindings.Day27.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day27.label}"
@@ -861,7 +885,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day28.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day28.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 28'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 28']}"
                  id="c41">
         <af:inputText value="#{row.bindings.Day28.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day28.label}"
@@ -877,7 +902,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day29.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day29.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 29'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 29']}"
                  id="c115">
         <af:inputText value="#{row.bindings.Day29.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day29.label}"
@@ -893,7 +919,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day30.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day30.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 30'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 30']}"
                  id="c63">
         <af:inputText value="#{row.bindings.Day30.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day30.label}"
@@ -909,7 +936,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day31.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day31.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 31'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 31']}"
                  id="c73">
         <af:inputText value="#{row.bindings.Day31.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day31.label}"
@@ -925,7 +953,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day32.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day32.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 32'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 32']}"
                  id="c48">
         <af:inputText value="#{row.bindings.Day32.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day32.label}"
@@ -941,7 +970,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day33.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day33.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 33'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 33']}"
                  id="c82">
         <af:inputText value="#{row.bindings.Day33.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day33.label}"
@@ -957,7 +987,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day34.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day34.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 34'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 34']}"
                  id="c47">
         <af:inputText value="#{row.bindings.Day34.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day34.label}"
@@ -973,7 +1004,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day35.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day35.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 35'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 35']}"
                  id="c36">
         <af:inputText value="#{row.bindings.Day35.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day35.label}"
@@ -988,8 +1020,9 @@
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day36.name}"
+      rendered="#{backingBeanScope.electronicMediaBean.columns['Day 36'] == true }"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day36.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 36']}"
                  id="c6">
         <af:inputText value="#{row.bindings.Day36.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day36.label}"
@@ -1004,8 +1037,9 @@
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day37.name}"
+      rendered="#{backingBeanScope.electronicMediaBean.columns['Day 37'] == true }"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day37.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 37']}"
                  id="c34">
         <af:inputText value="#{row.bindings.Day37.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day37.label}"
@@ -1021,7 +1055,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day38.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day38.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 38'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 38']}"
                  id="c99">
         <af:inputText value="#{row.bindings.Day38.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day38.label}"
@@ -1037,7 +1072,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day39.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day39.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 39'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 39']}"
                  id="c67">
         <af:inputText value="#{row.bindings.Day39.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day39.label}"
@@ -1053,7 +1089,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day40.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day40.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 40'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 40']}"
                  id="c68">
         <af:inputText value="#{row.bindings.Day40.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day40.label}"
@@ -1069,7 +1106,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day41.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day41.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 41'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 41']}"
                  id="c55">
         <af:inputText value="#{row.bindings.Day41.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day41.label}"
@@ -1085,7 +1123,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day42.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day42.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 42'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 42']}"
                  id="c123">
         <af:inputText value="#{row.bindings.Day42.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day42.label}"
@@ -1101,7 +1140,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day43.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day43.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 43'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 43']}"
                  id="c84">
         <af:inputText value="#{row.bindings.Day43.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day43.label}"
@@ -1117,7 +1157,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day44.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day44.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 44'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 44']}"
                  id="c75">
         <af:inputText value="#{row.bindings.Day44.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day44.label}"
@@ -1132,8 +1173,9 @@
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day45.name}"
+      rendered="#{backingBeanScope.electronicMediaBean.columns['Day 45'] == true }"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day45.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 45']}"
                  id="c57">
         <af:inputText value="#{row.bindings.Day45.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day45.label}"
@@ -1148,8 +1190,9 @@
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day46.name}"
+      rendered="#{backingBeanScope.electronicMediaBean.columns['Day 46'] == true }"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day46.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 46']}"
                  id="c46">
         <af:inputText value="#{row.bindings.Day46.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day46.label}"
@@ -1164,8 +1207,9 @@
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day47.name}"
+      rendered="#{backingBeanScope.electronicMediaBean.columns['Day 47'] == true }"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day47.label}"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 47']}"
                  id="c89">
         <af:inputText value="#{row.bindings.Day47.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day47.label}"
@@ -1181,7 +1225,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day48.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day48.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 48'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 48']}"
                  id="c90">
         <af:inputText value="#{row.bindings.Day48.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day48.label}"
@@ -1197,7 +1242,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day49.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day49.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 49'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 49']}"
                  id="c101">
         <af:inputText value="#{row.bindings.Day49.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day49.label}"
@@ -1213,7 +1259,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day50.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day50.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 50'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 50']}"
                  id="c16">
         <af:inputText value="#{row.bindings.Day50.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day50.label}"
@@ -1229,7 +1276,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day51.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day51.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 51'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 51']}"
                  id="c125">
         <af:inputText value="#{row.bindings.Day51.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day51.label}"
@@ -1245,7 +1293,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day52.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day52.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 52'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 52']}"
                  id="c29">
         <af:inputText value="#{row.bindings.Day52.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day52.label}"
@@ -1261,7 +1310,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day53.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day53.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 53'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 53']}"
                  id="c77">
         <af:inputText value="#{row.bindings.Day53.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day53.label}"
@@ -1277,7 +1327,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day54.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day54.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 54'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 54']}"
                  id="c52">
         <af:inputText value="#{row.bindings.Day54.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day54.label}"
@@ -1293,7 +1344,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day55.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day55.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 55'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 55']}"
                  id="c13">
         <af:inputText value="#{row.bindings.Day55.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day55.label}"
@@ -1309,7 +1361,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day56.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day56.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 56'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 56']}"
                  id="c56">
         <af:inputText value="#{row.bindings.Day56.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day56.label}"
@@ -1325,6 +1378,7 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day57.name}"
                  filterable="true" sortable="true"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 57'] == true }"
                  headerText="#{bindings.VOMediaPlan1.hints.Day57.label}"
                  id="c97">
         <af:inputText value="#{row.bindings.Day57.inputValue}"
@@ -1341,7 +1395,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day58.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day58.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 58'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 58']}"
                  id="c40">
         <af:inputText value="#{row.bindings.Day58.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day58.label}"
@@ -1357,7 +1412,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day59.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day59.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 59'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 59']}"
                  id="c21">
         <af:inputText value="#{row.bindings.Day59.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day59.label}"
@@ -1373,7 +1429,8 @@
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day60.name}"
                  filterable="true" sortable="true"
-                 headerText="#{bindings.VOMediaPlan1.hints.Day60.label}"
+                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 60'] == true }"
+                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 60']}"
                  id="c9">
         <af:inputText value="#{row.bindings.Day60.inputValue}"
                       label="#{bindings.VOMediaPlan1.hints.Day60.label}"

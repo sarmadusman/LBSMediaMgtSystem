@@ -9,11 +9,8 @@
                       disabled="true" inlineStyle="background-color:#F5F5F5">
       <f:facet name="first">
         <af:panelGroupLayout id="pt_pgl1" layout="vertical"
-                             inlineStyle="border-bottom:1px #00008B solid;"
-                             halign="right" valign="bottom">
-          <af:commandButton text="Logout" id="pt_cb1"
-                            action="#{backingBeanScope.GenericAction.logout}"/>
-        </af:panelGroupLayout>
+                             inlineStyle="border-bottom:solid #00008B 1px; background-image:url(&quot;images/header.jpg&quot;);"
+                             halign="left" valign="middle"/>
       </f:facet>
       <f:facet name="second">
         <af:facetRef facetName="main_content"/>
