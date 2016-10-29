@@ -19,8 +19,6 @@
     <page path="/application_fragments/frag_login_page.jsff"
           usageId="com_lbspak_view_frag_login_pagePageDef"/>
     <page path="/untitled1.jsp" usageId="com_lbspak_view_untitled1PageDef1"/>
-    <page path="/WEB-INF/tf-media_plan.xml#tf-media_plan@Execute"
-          usageId="com_lbspak_view_tf_media_plan_tf_media_plan_ExecutePageDef"/>
     <page path="/application_fragments/media_plan.jsff"
           usageId="com_lbspak_view_media_planPageDef"/>
   </pageMap>
@@ -37,8 +35,6 @@
           path="application_fragments.frag_login_pagePageDef"/>
     <page id="com_lbspak_view_untitled1PageDef1"
           path="com.lbspak.view.pageDefs.untitled1PageDef1"/>
-    <page id="com_lbspak_view_tf_media_plan_tf_media_plan_ExecutePageDef"
-          path="com.lbspak.view.pageDefs.tf_media_plan_tf_media_plan_ExecutePageDef"/>
     <page id="com_lbspak_view_media_planPageDef"
           path="application_fragments.media_planPageDef"/>
   </pageDefinitionUsages>

@@ -6,8 +6,8 @@
   Name="LBSAppModule"
   Version="11.1.1.64.93"
   InheritPersonalization="true"
-  ClearCacheOnRollback="true"
-  ComponentClass="com.lbspak.model.appmodules.LBSAppModuleImpl">
+  ComponentClass="com.lbspak.model.appmodules.LBSAppModuleImpl"
+  ClearCacheOnRollback="true">
   <DesignTime>
     <Attr Name="_deployType" Value="0"/>
     <Attr Name="_isCodegen" Value="true"/>
@@ -16,9 +16,24 @@
     Name="VOFndUsers1"
     ViewObjectName="com.lbspak.model.fnd.VOFndUsers"/>
   <ViewUsage
-    Name="VOMediaPlan1"
-    ViewObjectName="com.lbspak.model.electronic.VOMediaPlan"/>
-  <ViewUsage
     Name="VOCustomers1"
     ViewObjectName="com.lbspak.model.lov.VOCustomers"/>
+  <ViewUsage
+    Name="VOMediaPlanHeader1"
+    ViewObjectName="com.lbspak.model.electronic_media.VOMediaPlanHeader"/>
+  <ViewUsage
+    Name="VOMediaPlanLine1"
+    ViewObjectName="com.lbspak.model.electronic_media.VOMediaPlanLine"/>
+  <ViewUsage
+    Name="VOMediaPlanHeader2"
+    ViewObjectName="com.lbspak.model.electronic_media.VOMediaPlanHeader"/>
+  <ViewUsage
+    Name="VOMediaPlanLine2"
+    ViewObjectName="com.lbspak.model.electronic_media.VOMediaPlanLine"/>
+  <ViewLinkUsage
+    Name="VLMediaPlanHeader2Lines"
+    ViewLinkObjectName="com.lbspak.model.electronic_media.VLMediaPlanHeader2Lines"
+    SrcViewUsageName="com.lbspak.model.appmodules.LBSAppModule.VOMediaPlanHeader2"
+    DstViewUsageName="com.lbspak.model.appmodules.LBSAppModule.VOMediaPlanLine2"
+    Reversed="false"/>
 </AppModule>
