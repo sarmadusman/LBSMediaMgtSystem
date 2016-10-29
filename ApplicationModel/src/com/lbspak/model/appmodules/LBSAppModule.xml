@@ -18,4 +18,7 @@
   <ViewUsage
     Name="VOMediaPlan1"
     ViewObjectName="com.lbspak.model.electronic.VOMediaPlan"/>
+  <ViewUsage
+    Name="VOCustomers1"
+    ViewObjectName="com.lbspak.model.lov.VOCustomers"/>
 </AppModule>

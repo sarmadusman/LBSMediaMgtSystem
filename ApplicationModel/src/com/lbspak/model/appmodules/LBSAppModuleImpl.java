@@ -30,4 +30,12 @@ public class LBSAppModuleImpl extends ApplicationModuleImpl {
     public ViewObjectImpl getVOMediaPlan1() {
         return (ViewObjectImpl)findViewObject("VOMediaPlan1");
     }
+
+    /**
+     * Container's getter for VOCustomers1.
+     * @return VOCustomers1
+     */
+    public ViewObjectImpl getVOCustomers1() {
+        return (ViewObjectImpl)findViewObject("VOCustomers1");
+    }
 }

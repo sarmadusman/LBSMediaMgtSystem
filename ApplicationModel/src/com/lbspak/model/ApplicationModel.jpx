@@ -39,4 +39,12 @@
          <Attr Name="_VO" Value="true"/>
       </DesignTime>
    </Containee>
+   <Containee
+      Name="lov"
+      PackageName="com.lbspak.model.lov"
+      ObjectType="JboPackage">
+      <DesignTime>
+         <Attr Name="_VO" Value="true"/>
+      </DesignTime>
+   </Containee>
 </JboProject>
