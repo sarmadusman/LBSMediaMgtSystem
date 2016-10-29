@@ -43,11 +43,11 @@ public class ElectronicMediaActions {
         cal.setTime(dateFrom);
         
         while (cal.getTime().before(dateTo)) {
-            cal.add(Calendar.DATE, 1);
             dayNo = ((dayNo==0) ? cal.get(Calendar.DAY_OF_MONTH): (++dayNo));
             this.columns.put("Day "+dayNo, true);
             System.out.println(cal.getTime().toString());
             this.columnLables.put("Day "+dayNo, cal.getTime().toString());
+            cal.add(Calendar.DATE, 1);
         }
         
         

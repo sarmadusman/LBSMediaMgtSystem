@@ -59,7 +59,6 @@
           <Item Value="Day15"/>
           <Item Value="Day16"/>
           <Item Value="Day17"/>
-          <Item Value="Day"/>
           <Item Value="Day19"/>
           <Item Value="Day20"/>
           <Item Value="Day21"/>
@@ -141,6 +140,7 @@
           <Item Value="ActualcostSpot"/>
           <Item Value="ActualcnAmt"/>
           <Item Value="RowID"/>
+          <Item Value="Day18"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

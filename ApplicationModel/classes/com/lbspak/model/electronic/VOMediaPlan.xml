@@ -49,7 +49,6 @@
        EOMediaPlan.DAY15, 
        EOMediaPlan.DAY16, 
        EOMediaPlan.DAY17, 
-       EOMediaPlan.DAY, 
        EOMediaPlan.DAY19, 
        EOMediaPlan.DAY20, 
        EOMediaPlan.DAY21, 
@@ -130,7 +129,8 @@
        EOMediaPlan.ACTUALRATE, 
        EOMediaPlan.ACTUALCOST_SPOT, 
        EOMediaPlan.ACTUALCN_AMT, 
-       EOMediaPlan.ROWID"
+       EOMediaPlan.ROWID, 
+       EOMediaPlan.DAY18"
   FromList="MEDIA_PLAN EOMediaPlan"
   BindingStyle="OracleName"
   CustomQuery="false"
@@ -402,12 +402,6 @@
     EntityAttrName="Day17"
     EntityUsage="EOMediaPlan"
     AliasName="DAY17"/>
-  <ViewAttribute
-    Name="Day"
-    PrecisionRule="true"
-    EntityAttrName="Day"
-    EntityUsage="EOMediaPlan"
-    AliasName="DAY"/>
   <ViewAttribute
     Name="Day19"
     PrecisionRule="true"
@@ -895,4 +889,10 @@
     EntityAttrName="RowID"
     EntityUsage="EOMediaPlan"
     AliasName="ROWID"/>
+  <ViewAttribute
+    Name="Day18"
+    PrecisionRule="true"
+    EntityAttrName="Day18"
+    EntityUsage="EOMediaPlan"
+    AliasName="DAY18"/>
 </ViewObject>

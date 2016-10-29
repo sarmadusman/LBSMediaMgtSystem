@@ -32,8 +32,7 @@
                             contentStyle="font-weight:bold;padding:8px"
                             label=" " columns="60"/>
               <af:spacer width="10" height="10" id="spacer1"/>
-              <af:commandButton text="Login" id="cb1" action="do_login"
-                                inlineStyle="color:black; font-weight:bold;"/>
+              <af:commandButton text="Login" id="cb1" action="do_login"/>
             </af:panelFormLayout>
           </af:panelHeader>
         </af:panelGroupLayout>

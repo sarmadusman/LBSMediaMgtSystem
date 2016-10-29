@@ -499,17 +499,6 @@
     </DesignTime>
   </Attribute>
   <Attribute
-    Name="Day"
-    ColumnName="DAY"
-    SQLType="NUMERIC"
-    Type="oracle.jbo.domain.Number"
-    ColumnType="NUMBER"
-    TableName="MEDIA_PLAN">
-    <DesignTime>
-      <Attr Name="_DisplaySize" Value="22"/>
-    </DesignTime>
-  </Attribute>
-  <Attribute
     Name="Day19"
     ColumnName="DAY19"
     SQLType="NUMERIC"
@@ -1406,6 +1395,17 @@
     Type="oracle.jbo.domain.RowID"
     ColumnType="ROWID"
     PrimaryKey="true"/>
+  <Attribute
+    Name="Day18"
+    ColumnName="DAY18"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="MEDIA_PLAN">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
   <Key
     Name="MediaPlanCompanycodeCheck">
     <DesignTime>

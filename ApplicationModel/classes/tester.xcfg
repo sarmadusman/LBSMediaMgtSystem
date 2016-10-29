@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
    <AppModuleConfigBag ApplicationName="com.lbspak.model.appmodules.LBSAppModule">
-      <AppModuleConfig name="157F700CD09" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" DBconnection="java:comp/env/jdbc/LbsDBConnectionDS" IsLazyLoadingTrue="true" JDBCName="LbsDBConnection" jbo.project="com.lbspak.model.ApplicationModel" BC4JConfigName="LBSAppModuleLocal" DeployPlatform="LOCAL" ApplicationName="com.lbspak.model.appmodules.LBSAppModule">
+      <AppModuleConfig name="1580BC00737" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" DBconnection="java:comp/env/jdbc/LbsDBConnectionDS" IsLazyLoadingTrue="true" JDBCName="LbsDBConnection" jbo.project="com.lbspak.model.ApplicationModel" BC4JConfigName="LBSAppModuleLocal" DeployPlatform="LOCAL" ApplicationName="com.lbspak.model.appmodules.LBSAppModule">
          <Database jbo.SQLBuilder="Oracle" jbo.TypeMapEntries="Oracle"/>
          <Security AppModuleJndiName="com.lbspak.model.appmodules.LBSAppModule"/>
          <Tester FullProxyInterfaceName="com.lbspak.model.appmodules.common.LBSAppModule"/>

@@ -10,40 +10,19 @@
           <af:gridRow marginTop="5px" marginBottom="5px" height="auto" id="gr1">
             <af:gridCell marginStart="5px" width="25%" id="gc3">
               <af:panelGroupLayout id="panelGroupLayout3"
-                                   layout="vertical" halign="right">
-                <af:commandButton text="Show Days" id="commandButton3"
-                                  action="#{backingBeanScope.electronicMediaBean.showDays}"/>
-                <af:inputText label="Label 2" id="it122"/>
-              </af:panelGroupLayout>
+                                   layout="vertical" halign="right"/>
             </af:gridCell>
             <af:gridCell marginStart="5px" width="25%" id="gc1">
               <af:panelGroupLayout id="panelGroupLayout2"
                                    inlineStyle="background-color:black;"
-                                   layout="vertical" halign="right">
-                <af:inputDate label="Fro" id="inputDate3"
-                              binding="#{backingBeanScope.electronicMediaBean.dateFrom}"/>
-                <af:inputDate label="To" id="inputDate4"
-                              binding="#{backingBeanScope.electronicMediaBean.dateTo}"/>
-                <af:commandButton text="Show Days" id="commandButton2"
-                                  action="#{backingBeanScope.electronicMediaBean.showDays}"/>
-              </af:panelGroupLayout>
+                                   layout="vertical" halign="right"/>
             </af:gridCell>
             <af:gridCell marginStart="5px" width="25%" id="gc2">
               <af:panelGroupLayout id="panelGroupLayout1"
-                                   inlineStyle="background-color:black;"
-                                   layout="vertical" halign="right">
-                <af:inputDate label="Fro" id="inputDate1"
-                              binding="#{backingBeanScope.electronicMediaBean.dateFrom}"/>
-                <af:inputDate label="To" id="inputDate2"
-                              binding="#{backingBeanScope.electronicMediaBean.dateTo}"/>
-                <af:commandButton text="Show Days" id="commandButton1"
-                                  action="#{backingBeanScope.electronicMediaBean.showDays}"/>
-              </af:panelGroupLayout>
+                                   layout="vertical" halign="right"/>
             </af:gridCell>
-            <af:gridCell marginStart="5px" marginEnd="5px" width="25%" id="gc4"
-                         inlineStyle="background-color:blue;">
+            <af:gridCell marginStart="5px" marginEnd="5px" width="25%" id="gc4">
               <af:panelGroupLayout id="pgl5"
-                                   inlineStyle="background-color:black;"
                                    layout="vertical" halign="right">
                 <af:inputDate label="Fro" id="id9"
                               binding="#{backingBeanScope.electronicMediaBean.dateFrom}"/>
@@ -753,20 +732,16 @@
                             pattern="#{bindings.VOMediaPlan1.hints.Day17.format}"/>
         </af:inputText>
       </af:column>
-      <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day.name}"
-                 filterable="true" sortable="true"
-                 rendered="#{backingBeanScope.electronicMediaBean.columns['Day 18'] == true }"
-                 headerText="#{backingBeanScope.electronicMediaBean.columnLables['Day 18']}" id="c70">
-        <af:inputText value="#{row.bindings.Day.inputValue}"
-                      label="#{bindings.VOMediaPlan1.hints.Day.label}"
-                      required="#{bindings.VOMediaPlan1.hints.Day.mandatory}"
-                      columns="#{bindings.VOMediaPlan1.hints.Day.displayWidth}"
-                      maximumLength="#{bindings.VOMediaPlan1.hints.Day.precision}"
-                      shortDesc="#{bindings.VOMediaPlan1.hints.Day.tooltip}"
+      <af:column id="c70">
+        <af:inputText value="#{row.bindings.Day18.inputValue}"
+                      required="#{bindings.VOMediaPlan1.hints.Day18.mandatory}"
+                      columns="#{bindings.VOMediaPlan1.hints.Day18.displayWidth}"
+                      maximumLength="#{bindings.VOMediaPlan1.hints.Day18.precision}"
+                      shortDesc="#{bindings.VOMediaPlan1.hints.Day18.tooltip}"
                       id="it36">
-          <f:validator binding="#{row.bindings.Day.validator}"/>
+          <f:validator binding="#{row.bindings.Day18.validator}"/>
           <af:convertNumber groupingUsed="false"
-                            pattern="#{bindings.VOMediaPlan1.hints.Day.format}"/>
+                            pattern="#{bindings.VOMediaPlan1.hints.Day18.format}"/>
         </af:inputText>
       </af:column>
       <af:column sortProperty="#{bindings.VOMediaPlan1.hints.Day19.name}"
